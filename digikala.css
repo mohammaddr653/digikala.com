@@ -1,0 +1,1119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+body{
+  overflow-x: hidden;
+  text-align: center;
+  background-color: grey;
+}
+body div#body{
+    margin: 0 auto;
+}
+/*start header*/
+header{
+    width: 100%;
+    position: fixed;
+}
+header div#header{
+    width: 100%;
+    height: 145px;
+    margin: 0 auto;
+    background-color: white;
+}
+header div#header section#top>div,
+header div#header section#bottom div.bottommenu{
+    display: inline-block;
+}
+header div#header section#top{
+    position: relative;
+    width: 1537px;
+    height: 70px;
+    background-color: white;
+    margin: 0 auto;
+}
+header div#header section#top div.headerlogo{
+    position: absolute;
+    right: 35px;
+    top: 24px;
+}
+header div#header section#top div.headerlogo img{
+    transform: scale(1.2);
+}
+header div#header section#top div.headersearch{
+    position: absolute;
+    right: 10.8em;
+    top: 12px;
+}
+
+header div#header section#top div.headersearch div{
+    width: 50px;
+    height: 46px;
+    background-color: #f0f0f1;
+    /* background-color: violet; */
+    border-radius: 10px;
+    padding-top: 10px;
+    color: rgb(146, 146, 146);
+    position:absolute;
+    z-index: 6;
+    font-weight: lighter;
+    /* transition-property: background-color;
+    transition-duration: 1s; */
+}
+header div#header section#top div.headersearch form{
+    position: relative;
+    height: auto;
+    z-index: 5;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px 1px #949494; */
+}
+
+header div#header section#top div.headersearch form input{
+    width: 33.6em;
+    height: 46px;
+    background-color: #f0f0f1;
+    outline: none;
+    border: hidden;
+    padding-right: 55px;
+    border-radius: 10px;
+    font-family: 'Markazi Text', serif;
+    font-size: 17px;
+    font-weight: lighter;
+    z-index: 10;
+    /* transition-property: background-color;
+    transition-duration: .5s; */
+}
+/* header div#header section#top div.headersearch form input,
+header div#header section#top div.headersearch div{
+    transition-property: background-color;
+    transition-duration: .5s; 
+} */
+header div#header section#top div.headersearch form input:focus{
+    background-color: white;
+}
+header div#header section#top div.headersearch form input::placeholder{
+    color: rgb(146, 146, 146);
+}
+header div#header section#top div.headerleft{
+    position: absolute;
+    left: 0px;
+}
+header div#header section#top div.headersearch form div#results{
+    background-color: white;
+    position: relative;
+    width: 35.7em;
+    height:auto;
+    z-index: 10;
+    border-radius: 0px 0px 10px 10px;
+    padding: 0px;
+    padding-bottom: 20px;
+    display: none;
+}
+header div#header section#top div.headersearch form div#results>div{
+    position: relative;
+    background-color: white;
+    width: 35.7em;
+    display: none;
+    border-radius: 0px;
+    padding: 0px;
+}
+header div#header section#top div.headersearch form div#results div.lastsearchs{
+    display: block;
+}
+header div#header section#top div.headersearch form div#results div.lastsearchs div{
+    position: relative;
+    background-color: white;
+    width: 35.6em;
+    border-radius: 0px;
+    text-align: right;
+}
+header div#header section#top div.headersearch form div#results div.lastsearchs div p{
+    color: black;
+    position: absolute;
+    display: inline-block;
+}
+header div#header section#top div.headersearch form div#results div.lastsearchs div p:nth-child(1){
+    right: 10px;
+    top: 13px;
+    color: #A1A3A8;
+}
+header div#header section#top div.headersearch form div#results div.lastsearchs div p:nth-child(2){
+    right: 40px;
+    font-family: 'Markazi Text', serif;
+    font-size: 16px;
+    top: 15px;
+    color:#5B5B5B;
+}
+header div#header section#top div.headersearch form div#results div.lastsearchs div p:nth-child(3){
+    left: 10px;
+    bottom: 10px;
+    color: #A1A3A8;
+}
+header div#header section#top div.headerleft a div.signin{
+    position: absolute;
+    left: 82px;
+    top: 12px;
+    background-color: rgb(255, 255, 255);
+    width: 168px;
+    height: 46px;
+    text-align: right;
+    font-family: 'Markazi Text', serif;
+    font-size: 16px;
+    border-radius: 10px;
+    border: .5px rgb(214, 214, 214) solid;
+    color: rgb(94, 94, 94);
+    padding: 10px 12px;
+    font-weight: lighter;
+}
+header div#header section#top div.headerleft div.headerleftline{
+    position: absolute;
+    width: 1px;
+    left: 65px;
+    top: 23px;
+    height: 25px;
+    background-color: rgb(214, 214, 214);
+}
+header div#header section#top div.headerleft div.cart{
+    position: absolute;
+    left: 23px;
+    top: 20px;
+}
+header div#header section#top div.headerleft div.cart a p{
+    color: rgb(94, 94, 94);
+}
+header div#header section#bottom{
+    position: relative;
+    width: 1537px;
+    height: 75px;
+    text-align: right;
+    background-color: white;
+    padding-right: 22px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+}
+header div#header section#bottom div.bottommenu{
+    position: absolute;
+    font-family: 'Markazi Text', serif;
+    font-size: 17px;
+    color: rgb(94, 94, 94);
+    font-weight: lighter;
+    width: 110px;
+    height: 75px;
+    background-color: white;
+}
+header div#header section#bottom div.productsmenu div p i{
+    position: absolute;
+    right: 6px;
+    top: 25px;
+}
+header div#header section#bottom div.productsmenu{
+    padding-top: 15px;
+    padding-right: 35px;
+
+}
+header div#header section#bottom div.supermarket{
+    right: 132px;
+    padding-top: 20px;
+    padding-right: 25px;
+
+}
+header div#header section#bottom div.off{
+    right: 242px;
+    padding-top: 15px;
+    padding-right: 25px;
+
+}
+header div#header section#bottom div.mydigikala{
+    right: 352px;
+    padding-top: 20px ;
+    padding-right: 14px;
+
+}
+header div#header section#bottom div.digiplus{
+    right: 462px;
+    padding-top: 20px ;
+    padding-right: 23px;
+
+}
+header div#header section#bottom div.digiclub{
+    right: 572px;
+    padding-top: 20px;
+    padding-right: 25px;
+
+}
+header div#header section#bottom div.digipay{
+    right: 682px;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+header div#header section#bottom div.yourcity div p i{
+    position: absolute;
+    left: 0px;
+}
+header div#header section#bottom div.yourcity{
+    left: 28px;
+    padding-top: 20px ;
+    padding-right: 0px;
+    width: 220px;
+    font-size: 16px;
+}
+header div#header section#bottom div.bottommenu:not(div.productsmenu):hover{
+    cursor: pointer;
+}
+header div#header section#bottom div.productsmenu:hover{
+    cursor: default;
+}
+header div#header section#bottom div.preventclosemenu{
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    top: 72px;
+    z-index: 10;
+}
+header div#header section#bottom div.borderbottom{
+    position: relative;
+    width: 1%;
+    visibility: hidden;
+    height: 2px;
+    transition-duration: .4s;
+    top: 74px;
+}
+/* header div#header section#bottom div.productsmenu div.borderbottom{
+    top: 74px;
+} */
+/* header div#header section#bottom  div.supermarket div.borderbottom{
+    top: 74px;
+    right: 45px;
+}
+header div#header section#bottom  div.off div.borderbottom{
+    top: 74px;
+    right: 45px;
+}
+header div#header section#bottom  div.mydigikala div.borderbottom{
+    top: 74px;
+    right: 45px;
+}
+header div#header section#bottom  div.digiplus div.borderbottom{
+    top: 74px;
+    right: 45px;
+}
+header div#header section#bottom  div.digiclub div.borderbottom{
+    top: 74px;
+    right: 45px;
+}
+header div#header section#bottom  div.digipay div.borderbottom{
+    top: 74px;
+    right: 45px;
+} */
+header div#header section#bottom div.borderbottom{
+    background-color: red;
+    /* transition-duration: .4s;
+    transform: scaleX(110); */
+}
+
+
+
+/* productsmenu start */
+
+
+
+header div#header section#bottom div.productsmenu div.text1 div#products{
+    position: relative;
+    display: none;
+    width: 235px;
+    height: 29.2em;
+    background-color: rgb(252, 252, 252);
+    top: 17px;
+    left: 27px;
+    padding: 10px 0 10px 0;
+    text-align: right;
+    border-radius: 0 0 10px 0;
+    /* overflow-y: hidden; */
+}
+/* header div#header section#bottom div.productsmenu:hover div.text1 div#products{
+    display: block;
+} */
+header div#header section#bottom div.productsmenu div.text1 div#products ul{
+    font-family: 'Markazi Text', serif;
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things>div{
+    display: none;
+    position: absolute;
+    right: 234px;
+    text-align: right;
+    width: 73em;
+    top: 0px;
+    height: 29.2em;
+    background-color: rgb(252, 252, 252);
+    border-right:1px #dbdbdbe0 solid;
+    border-radius: 0 0 0 10px;
+
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things a:nth-child(1) div{
+    background-color: rgb(252, 252, 252);
+    padding: 0px 10px;
+    position: relative;
+    width: 234px;
+    height: 47px;
+    border-top: 1px rgb(252, 252, 252) solid;
+    border-bottom: 1px rgb(252, 252, 252) solid;
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things a:nth-child(1) div h2{
+    position: absolute;
+    top: 10px;
+}
+/* header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things a:nth-child(1) div:hover{
+    border-top: 1px #dbdbdb solid;
+    border-bottom: 1px #dbdbdb solid;
+    background-color: #f0f0f1;
+} */
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things a:nth-child(1) div h2{
+        font-size: 18px;
+        font-family: 'Markazi Text', serif;
+        font-weight: lighter;
+        color: rgb(71, 71, 71);
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things a:nth-child(1) div:hover h2{
+    color: rgb(255, 62, 62);
+}
+/* header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things:hover>div{
+    display: block;
+} */
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things>div>a:nth-child(1){
+    background-color: rgb(252, 252, 252);
+    position: absolute;
+    right: 0px;
+    font-family: 'Markazi Text', serif;
+    color: rgba(0, 0, 0, 0.89);
+    padding: 15px 10px;
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things>div>a:nth-child(1) span i{
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things>div ul.row{
+    position: relative;
+    float: right;
+    top: 50px;
+    width :230px;
+    border: 2px rgb(252, 252, 252) solid;
+    height: 446px;
+    background-color: rgb(252, 252, 252);
+    padding: 10px 10px 30px 10px;
+    font-family: 'Markazi Text', serif;
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things>div ul.row>div h3 a{
+    font-family: 'Markazi Text', serif;
+    color: rgba(0, 0, 0, 0.89);
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things>div ul.row>div h3{
+    position: relative;
+    right: 10px;
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things>div ul.row>div h3 a span{
+    background-color: red;
+    width: 3px;
+    height: 17px;
+    position: absolute;
+    right: -9px;
+    top: 4px;
+    border-radius: 2px;
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things>div ul.row>div h3 a:hover{
+    color: rgb(255, 62, 62);
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things>div ul.row>div li{
+    margin: 5px 0 5px 0;
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things>div ul.row>div li a{
+    color: rgb(71, 71, 71);
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things>div ul.row>div li a:hover{
+    color: rgb(255, 62, 62);
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things>div>a:last-child{
+    position: absolute;
+    background-color: pink;
+    top: 15px;
+    width: 300px;
+    height: 250px;
+    left: 15px;
+    border-radius: 10px;
+}
+header div#header section#bottom div.productsmenu div.text1 div#products ul li div.things>div>a:last-child img{
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+
+}
+    /* productsmenu end */
+
+    /* supermarket start */
+header div#header section#bottom div.supermarket div.text2 p{
+    color: rgb(94, 94, 94);
+}
+header div#header section#bottom  div#supermarketcontainer{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    background-color:rgb(252, 252, 252);
+    top: 74px;
+    left: 51.8%;
+    display: none;
+    overflow: hidden;
+    cursor:default;
+    border-radius: 0 0 10px 10px;
+}
+/* header div#header section#bottom div.supermarket:hover div.text2 div#supermarketcontainer{
+    display: block;
+} */
+header div#header section#bottom  div#supermarketcontainer div.right{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(252, 252, 252);
+}
+header div#header section#bottom  div#supermarketcontainer div.right div.hugesup{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(252, 252, 252);
+    padding: 15px 22px;
+}
+header div#header section#bottom  div#supermarketcontainer div.right div.hugesup a div h3{
+    font-family: 'Markazi Text', serif;
+    font-size: 18px;
+    color: rgb(49, 49, 49);
+}
+header div#header section#bottom  div#supermarketcontainer div.right div.digisup{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(252, 252, 252);
+    padding: 15px 15px;
+    font-family: 'Markazi Text', serif;
+
+}
+header div#header section#bottom  div#supermarketcontainer div.right div.digisup ul>a div{
+    padding-right: 7px;
+    margin-bottom: 10px;
+}
+header div#header section#bottom  div#supermarketcontainer div.right div.digisup ul>a div h3{
+    font-family: 'Markazi Text', serif;
+    font-size: 18px;
+    color: rgb(49, 49, 49);
+}
+header div#header section#bottom  div#supermarketcontainer div.right div.digisup li{
+    margin-top: 5px;
+    color: rgb(71, 71, 71);
+}
+header div#header section#bottom  div#supermarketcontainer div.right div.digisup li a{
+    color: rgb(71, 71, 71);
+}
+header div#header section#bottom  div#supermarketcontainer div.right div.digisup li a:hover{
+    color: rgb(255, 62, 62);
+}
+header div#header section#bottom  div#supermarketcontainer div.right>div a:hover div h3{
+    color: rgb(255, 62, 62);
+}
+header div#header section#bottom  div#supermarketcontainer div.right>div ul a:hover div h3{
+    color: rgb(255, 62, 62);
+}
+header div#header section#bottom  div#supermarketcontainer div.right>div a div h3 span{
+    background-color: red;
+    width: 3px;
+    height: 17px;
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    border-radius: 2px;
+}
+header div#header section#bottom  div#supermarketcontainer div.right ,
+header div#header section#bottom  div#supermarketcontainer div.left{
+    position: relative;
+    height: 300px;
+}
+header div#header section#bottom  div#supermarketcontainer div.right{
+    width: 270px;
+}
+header div#header section#bottom  div#supermarketcontainer div.right hr{
+    position: relative;
+    width: 240px;
+    height: .1px;
+    right: 15px;
+    opacity: .2;
+}
+header div#header section#bottom  div#supermarketcontainer div.left{
+    width: 330px;
+}
+header div#header section#bottom  div#supermarketcontainer>div{
+    float: right;
+}
+header div#header section#bottom  div#supermarketcontainer div.left a div.top{
+    width: 100%;
+    height: auto;
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+    padding: 17px 0px 0px 0px;
+}
+header div#header section#bottom  div#supermarketcontainer div.left a div.top img{
+    border-radius: 10px;
+}
+header div#header section#bottom  div#supermarketcontainer div.left a div.bottom{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(233, 233, 233);
+}
+header div#header section#bottom  div#supermarketcontainer div.left a div.bottom>div{
+    position: relative;
+    float: right;
+}
+header div#header section#bottom  div#supermarketcontainer div.left a div.bottom>div.jetapplogo{
+    width: 55px;
+    height: 55px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    right: 10px;
+    top: 5px;
+}
+header div#header section#bottom  div#supermarketcontainer div.left a div.bottom>div.jetapplogo img{
+    border-radius: 10px;
+}
+header div#header section#bottom  div#supermarketcontainer div.left a div.bottom>div.jetintro{
+    width: 250px;
+    height: auto;
+    background-color: rgb(233, 233, 233);
+    text-align: right;
+    right: 20px;
+    top: 10px;
+}
+header div#header section#bottom  div#supermarketcontainer div.left a div.bottom>div.jetintro p:nth-child(1) span:nth-child(1){
+    font-family: 'Markazi Text', serif;
+    font-size: 20px;
+    color: rgb(27, 27, 27);
+    font-weight: bolder;
+}
+header div#header section#bottom  div#supermarketcontainer div.left a div.bottom>div.jetintro p:nth-child(1) span:nth-child(2){
+    font-family: 'Markazi Text', serif;
+    font-size: 14px;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.123);
+    padding: 0px 5px;
+    padding-bottom: 2px;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+header div#header section#bottom  div#supermarketcontainer div.left a div.bottom>div.jetintro p:nth-child(2){
+    font-family: 'Markazi Text', serif;
+    font-size: 14px;
+    margin-top: 5px;
+    color: rgb(65, 65, 65);
+    font-weight:lighter;
+}
+header div#header section#bottom  div#supermarketcontainer div.left a div.bottom>div.jetintro p:nth-child(2) span{
+    font-family: 'Markazi Text', serif;
+    font-size: 14px;
+    margin-top: 5px;
+    color: rgb(71, 143, 12);
+    font-weight:lighter;
+}
+header div#header section#bottom  div#supermarketcontainer div.left a div.bottom>i {
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    color: rgb(27, 27, 27);
+}
+
+
+ /* supermarket end */
+
+/* off start */
+
+
+header div#header section#bottom div.off div.text3 p{
+    color: rgb(94, 94, 94);
+}
+header div#header section#bottom  div#offcontainer{
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    background-color:rgb(252, 252, 252);
+    top: 74px;
+    left: 40%;
+    display: none;
+    overflow: hidden;
+    cursor:default;
+    border-radius: 0 0 10px 10px;
+}
+/* header div#header section#bottom div.supermarket:hover div.text2 div#offcontainer{
+    display: block;
+} */
+header div#header section#bottom  div#offcontainer div.right{
+    position: relative;
+    width: 470px;
+    height: 400px;
+    background-color: rgb(252, 252, 252);
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow1{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(252, 252, 252);
+    padding: 15px 15px;
+    font-family: 'Markazi Text', serif;
+
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow1>div{
+    position: absolute;
+    top: 18px;
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow1>div a{
+    color: rgb(27, 27, 27);
+    font-family: 'Markazi Text', serif;
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow1>div a i{
+    position: absolute;
+    bottom: -.5px;
+    left: -12px;
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow1 ul{
+    padding-top: 40px;
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow1 ul>a div{
+    padding-right: 7px;
+    margin-bottom: 10px;
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow1 ul>a div h3{
+    font-family: 'Markazi Text', serif;
+    font-size: 18px;
+    color: rgb(49, 49, 49);
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow1 li{
+    margin-top: 5px;
+    color: rgb(71, 71, 71);
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow1 li a{
+    color: rgb(71, 71, 71);
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow1 li a:hover{
+    color: rgb(255, 62, 62);
+}
+
+
+
+
+header div#header section#bottom  div#offcontainer div.right div.offrow2{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(252, 252, 252);
+    padding: 15px 15px;
+    font-family: 'Markazi Text', serif;
+
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow2 ul{
+    padding-top: 40px;
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow2 ul>a div{
+    padding-right: 7px;
+    margin-bottom: 10px;
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow2 ul>a div h3{
+    font-family: 'Markazi Text', serif;
+    font-size: 18px;
+    color: rgb(49, 49, 49);
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow2 li{
+    margin-top: 5px;
+    color: rgb(71, 71, 71);
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow2 li a{
+    color: rgb(71, 71, 71);
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow2 li a:hover{
+    color: rgb(255, 62, 62);
+}
+
+
+
+
+header div#header section#bottom  div#offcontainer div.right>div{
+    position: relative;
+    float: right;
+}
+header div#header section#bottom div.off div.text2 div#offcontainer div.right>div a:hover div h3{
+    color: rgb(255, 62, 62);
+}
+header div#header section#bottom  div#offcontainer div.right>div ul a:hover div h3{
+    color: rgb(255, 62, 62);
+}
+header div#header section#bottom  div#offcontainer div.right>div a div{
+    position: relative;
+}
+header div#header section#bottom  div#offcontainer div.right>div a div h3 span{
+    background-color: red;
+    width: 3px;
+    height: 17px;
+    position: absolute;
+    right: 0px;
+    top: 3px;
+    border-radius: 2px;
+}
+header div#header section#bottom  div#offcontainer div.right ,
+header div#header section#bottom  div#offcontainer div.left{
+    position: relative;
+}
+header div#header section#bottom  div#offcontainer div.right div.offrow2 ul hr{
+    position: relative;
+    width: 200px;
+    height: .1px;
+    right: 0px;
+    margin: 10px 0;
+    opacity: .2;
+}
+header div#header section#bottom  div#offcontainer>div{
+    float: right;
+}
+header div#header section#bottom  div#offcontainer div.left{
+    width: 41.2%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgb(252, 252, 252);
+}
+header div#header section#bottom  div#offcontainer div.left img{
+    border-radius: 10px;
+}
+/* off end */
+
+/* digiplus start*/
+
+header div#header section#bottom div.digiplus div.text5 p{
+    color: rgb(94, 94, 94);
+}
+header div#header section#bottom  div#digipluscontainer{
+    position: absolute;
+    width: 700px;
+    height: 200px;
+    background-color:rgb(255, 0, 0);
+    top: 74px;
+    left: 700px;
+    overflow: hidden;
+    display: none;
+    cursor:default;
+    border-radius: 0 0 10px 10px;
+}
+/* header div#header section#bottom div.digiplus:hover div.text5 div#digipluscontainer{
+    display: block;
+} */
+header div#header section#bottom  div#digipluscontainer div.right{
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background-color: rgb(252, 252, 252);
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plustop{
+    position: relative;
+    width: 100%;
+    height: 130px;
+    background-color: rgb(252, 252, 252);
+    padding: 15px 15px;
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plustop p{
+    position: relative;
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plustop p:nth-child(1){
+    font-family: 'Markazi Text', serif;
+    font-size: 19px;
+    font-weight: bolder;
+    color: black;
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plustop p:nth-child(2){
+    font-family: 'Markazi Text', serif;
+    font-size: 17px;
+    color: rgb(71, 71, 71);
+    font-weight: lighter;
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plustop p:last-child a{
+    font-family: 'Markazi Text', serif;
+    color: rgb(48, 171, 241);
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plustop p:nth-child(1) span:nth-child(2){
+    font-family: 'Markazi Text', serif;
+    font-size: 19px;
+    font-weight: bolder;
+    color: purple;
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plustop p:last-child a i{
+    position: absolute;
+    top: -2px;
+    right: 138px;
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plustop{
+    cursor: default;
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plustop p:nth-child(1),
+header div#header section#bottom  div#digipluscontainer div.right div.plustop p:nth-child(2){
+    margin-bottom: 10px;
+    cursor: default;
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plusbottom{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(252, 252, 252);
+    padding: 10px 28px;
+    font-family: 'Markazi Text', serif;
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plusbottom li{
+    margin-top: 5px;
+    color: rgb(71, 71, 71);
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plusbottom li a{
+    color: rgb(71, 71, 71);
+    font-family: 'Markazi Text', serif;
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plusbottom li a:hover{
+    cursor: pointer;
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plusbottom li:nth-child(1) a span:nth-child(3){
+    color: purple;
+    font-weight: bold;
+    font-family: 'Markazi Text', serif;
+}
+header div#header section#bottom  div#digipluscontainer div.right ,
+header div#header section#bottom  div#digipluscontainer div.left{
+    position: relative;
+    height: 210px;
+}
+header div#header section#bottom  div#digipluscontainer div.right hr{
+    position: relative;
+    width: 240px;
+    height: .1px;
+    right: 15px;
+    opacity: .2;
+}
+header div#header section#bottom  div#digipluscontainer div.left{
+    width: 350px;
+    background-color: rgb(252, 252, 252);
+}
+header div#header section#bottom  div#digipluscontainer>div{
+    float: right;
+}
+header div#header section#bottom  div#digipluscontainer div.right div.plusbottom li a i{
+    position: absolute;
+    color: rgb(182, 182, 182);
+    right: 12px;
+    top: 22px;
+}
+header div#header section#bottom  div#digipluscontainer div.left{
+    padding: 10px;
+}
+header div#header section#bottom  div#digipluscontainer div.left div,
+header div#header section#bottom  div#digipluscontainer div.left div img{
+    border-radius: 10px;
+}
+header div#header section#bottom  div#digipluscontainer div.left div{
+    position: relative;
+    top: 13px;
+}
+
+
+
+ /* digiplus end */
+
+
+ /* digiclub start*/
+
+
+ header div#header section#bottom div.digiclub div.text6 p{
+    color: rgb(94, 94, 94);
+}
+header div#header section#bottom  div#digiclubcontainer{
+    position: absolute;
+    width: 730px;
+    height: 230px;
+    background-color:rgb(255, 0, 0);
+    top: 74px;
+    left: 680px;
+    overflow: hidden;
+    display: none;
+    cursor:default;
+    border-radius: 0 0 10px 10px;
+}
+/* header div#header section#bottom div.digiclub:hover div.text5 div#digiclubcontainer{
+    display: block;
+} */
+header div#header section#bottom  div#digiclubcontainer div.right{
+    position: relative;
+    width: 365px;
+    height: 300px;
+    background-color: rgb(252, 252, 252);
+}
+header div#header section#bottom  div#digiclubcontainer div.right div.clubtop{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-color: rgb(252, 252, 252);
+    padding: 15px 15px;
+    padding-bottom: 0px;
+}
+header div#header section#bottom  div#digiclubcontainer div.right div.clubtop div{
+    background-color: rgb(252, 252, 252);
+    width: auto;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-family: 'Markazi Text', serif;
+    font-size: 17px;
+    font-weight: lighter;
+    color: black;
+}
+header div#header section#bottom  div#digiclubcontainer div.right div.clubtop>a:nth-child(2) div{
+    margin-top: 0px;
+}
+header div#header section#bottom  div#digiclubcontainer div.right div.clubtop>div:nth-child(1){
+    position: relative;
+    top: -8px;
+}
+header div#header section#bottom  div#digiclubcontainer div.right div.clubtop>div:nth-child(4){
+    color: rgb(94, 94, 94);
+}
+header div#header section#bottom  div#digiclubcontainer div.right div.clubbottom{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(252, 252, 252);
+    padding: 10px 15px;
+    font-family: 'Markazi Text', serif;
+}
+header div#header section#bottom  div#digiclubcontainer div.right div.clubbottom a div{
+    background-color: rgb(252, 252, 252);
+    display: inline-block;
+    font-family: 'Markazi Text', serif;
+    font-size: 17px;
+    font-weight: lighter;
+    color: black;
+}
+header div#header section#bottom  div#digiclubcontainer div.right div.clubbottom a div:nth-child(2){
+    position: relative;
+    right: 180px;
+    width: 100px;
+    text-align: left;
+    font-size: 20px;
+
+}
+header div#header section#bottom  div#digiclubcontainer div.right ,
+header div#header section#bottom  div#digiclubcontainer div.left{
+    position: relative;
+    height: 235px;
+}
+header div#header section#bottom  div#digiclubcontainer div.right hr{
+    position: relative;
+    width: 300px;
+    height: .1px;
+    right: 15px;
+    margin-top: 5px;
+    opacity: .2;
+}
+header div#header section#bottom  div#digiclubcontainer div.left{
+    width: 365px;
+    background-color: rgb(252, 252, 252);
+}
+header div#header section#bottom  div#digiclubcontainer>div{
+    float: right;
+}
+header div#header section#bottom  div#digiclubcontainer div.left{
+    padding: 10px;
+}
+header div#header section#bottom  div#digiclubcontainer div.left div{
+    position: relative;
+    top: 2px;
+    border-radius: 10px;
+}
+header div#header section#bottom  div#digiclubcontainer div.left div img{
+    border-radius: 10px;
+
+}
+
+ /* digiclub end */
+
+ /* digipay start */
+
+
+ header div#header section#bottom div.digipay div.text7 p{
+    color: rgb(94, 94, 94);
+}
+header div#header section#bottom  div#digipaycontainer{
+    position: absolute;
+    width: 570px;
+    height: 200px;
+    background-color:rgb(255, 0, 0);
+    top: 74px;
+    left: 700px;
+    display: none;
+    overflow: hidden;
+    cursor:default;
+    border-radius: 0 0 10px 10px;
+}
+/* header div#header section#bottom div.digipay:hover div.text5 div#digipaycontainer{
+    display: block;
+} */
+header div#header section#bottom  div#digipaycontainer div.right{
+    position: relative;
+    width: 235px;
+    height: 300px;
+    background-color:rgb(252, 252, 252);
+}
+header div#header section#bottom  div#digipaycontainer div.right div.paytop{
+    position: relative;
+    width: 100%;
+    height: 230px;
+    background-color: rgb(252, 252, 252);
+    padding: 15px 15px;
+    padding-bottom: 0px;
+}
+header div#header section#bottom  div#digipaycontainer div.right div.paytop a div{
+    background-color: rgb(252, 252, 252);
+    width: auto;
+    font-family: 'Markazi Text', serif;
+    font-size: 17px;
+    font-weight: lighter;
+    color: black;
+}
+header div#header section#bottom  div#digipaycontainer div.right div.paytop a:nth-child(n+2) div{
+    margin-top: 14px; 
+}
+header div#header section#bottom  div#digipaycontainer div.right ,
+header div#header section#bottom  div#digipaycontainer div.left{
+    position: relative;
+    height: 235px;
+}
+header div#header section#bottom  div#digipaycontainer div.left{
+    width: 335px;
+    background-color: rgb(252, 252, 252);
+}
+header div#header section#bottom  div#digipaycontainer>div{
+    float: right;
+}
+header div#header section#bottom  div#digipaycontainer div.left{
+    padding: 10px;
+}
+header div#header section#bottom  div#digipaycontainer div.left div{
+    position: relative;
+    top: 2px;
+    border-radius: 10px;
+}
+header div#header section#bottom  div#digipaycontainer div.left div img{
+    border-radius: 10px;
+}
+
+
+ /* digipay end */
